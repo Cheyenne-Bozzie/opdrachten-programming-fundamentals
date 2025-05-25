@@ -2,6 +2,7 @@
 # Voorbeeld Opdracht
 # Gebruik de not operator om het tegenovergestelde van de boolean waarde True te printen.
 # ==========================================
+# from intput import user_input
 
 print(not True)     # Het resultaat is: False
 
@@ -15,6 +16,7 @@ print(not True)     # Het resultaat is: False
 # Verwachte uitkomst is de boolean waarde: True
 # ==========================================
 
+print(5 > 3 and 5 < 10) # True
 
 
 # ==========================================
@@ -25,6 +27,7 @@ print(not True)     # Het resultaat is: False
 # Verwachte uitkomst: True
 # ==========================================
 
+print(7 > 5 and 7 < 12 and not (7 == 10)) # True
 
 
 # ==========================================
@@ -39,18 +42,18 @@ print(not True)     # Het resultaat is: False
 x = 5
 y = -4
 
-
-
+print(5 > 0 and 5 < 10)
+print(-4 > 0 and -4 < 10)
 
 # ==========================================
 # Opgave 5.
 # Geef aan wat het resultaat zou zijn van de volgende code:
 
-# A. print(True or 1 / 0)
-# B. print(True or False)
-# C. print(False and True and True)
-# D. print(True or False or False)
-# E. print(not True or False or not True)
+# A. print(True or 1 / 0) True
+# B. print(True or False) True
+# C. print(False and True and True) False
+# D. print(True or False or False) True
+# E. print(not True or False or not True) False
 # ==========================================
 
 
@@ -63,6 +66,9 @@ y = -4
 # Tip: Als het nummer gedeeld door 2 geen restwaarde heeft, dan is het even. Anders is het oneven.
 # ==========================================
 
+nummer = 42
+even_of_oneven = "Even" if nummer % 2 == 0 else "Oneven"
+print(even_of_oneven)
 
 
 # ==========================================
@@ -78,7 +84,8 @@ y = -4
 # ==========================================
 
 uur = 9
-
+Begroeting = "Goedemorgen" if uur < 12 else "Goedemiddag" if uur < 18 else "Goedenavond"
+print(Begroeting)
 
 # =========================================
 # Opgave 8:
@@ -89,4 +96,6 @@ uur = 9
 # Verwachte uitkomst bij invoer van getallen 2 en 3:  De som van 2 en 3 is : 5
 # ==========================================
 
-
+getal_een = float(input("Voer het eerste getal in :"))
+getal_twee = float(input("Voer het tweede getal in :"))
+print('de som van', getal_een, 'en', getal_twee, 'is:', getal_een + getal_twee)

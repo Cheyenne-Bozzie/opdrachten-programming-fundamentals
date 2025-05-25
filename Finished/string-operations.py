@@ -9,6 +9,7 @@ aantal_keer = 3
 
 print(woord * aantal_keer)  # Het resultaat is: Python Python Python
 
+print('Python ' * 3)
 
 # ==========================================
 # Opgave 1:
@@ -20,7 +21,9 @@ print(woord * aantal_keer)  # Het resultaat is: Python Python Python
 # Verwachte uitkomst: Bello is 4 jaar. Dit is 28 jaar in mensenjaren.
 # ==========================================
 
-
+leeftijd_hond = 4
+naar_mensen_jaren = 7
+print('Bello is', leeftijd_hond, 'jaar. Dit is ', leeftijd_hond * naar_mensen_jaren, 'in mensenjaren.')
 
 # ==========================================
 # Opgave 2:
@@ -32,32 +35,34 @@ variabele_een = '5'
 variabele_twee = 1 / 1
 variabele_drie = 'Python' * 3
 
-
+print(variabele_een)
 
 # ==========================================
 # Opgave 3:
 # Niet alle variabele namen zijn toegestaan in Python. Sommige namen zijn gereserveerd voor Python zelf (keywords).
 # Welke van de volgende variabele namen kun je gebruiken zonder dat je een foutmelding krijgt? Bedenk het antwoord vooraf en check het door de variabelen aan te maken.
 
-# a.     And = ‘something’
+# a.     and = ‘something’
 # b.     while = ‘something’
-# c.     Break = ‘something’
+# c.     break = ‘something’
 # d.     none = ‘something’
 # ==========================================
 
-
+# A,B en C kunnen niet gebruikt worden.
 
 # ==========================================
 # Opgave 4:
 # Schrijf een goede variabele naam voor:
 
-# A.     Het totale aantal van een product (bananen)
-# B.     De minimale toegestane lengte voor een attractie in een pretpark
-# C.     Het grootste getal in een rij met getallen
+# A. Het totale aantal van een product (bananen)
+# B. De minimale toegestane lengte voor een attractie in een pretpark
+# C. Het grootste getal in een rij met getallen
 
-# Denk ook aan de schrijf conventies voor variabele namen.
+# Denk ook aan de schrijfconventies voor variabele namen.
 # ==========================================
-
+# A. totaal_aantal_bananen
+# B. min_lengte_voor_attractie
+# C. max_getal
 
 
 # ==========================================
@@ -66,7 +71,7 @@ variabele_drie = 'Python' * 3
 # Maak van het getal 3.14 een 3. Je mag alleen de typecast functie gebruiken
 # ==========================================
 
-
+print(int(3.14))
 
 # ==========================================
 # Opgave 6:
@@ -78,23 +83,5 @@ variabele_drie = 'Python' * 3
 # ==========================================
 
 mijn_variabele = 5
+print(str(mijn_variabele) * 3)  # Het resultaat is: 555
 
-
-print(mijn_variabele * 3)  # Het resultaat is: 555
-
-
-
-# ==========================================
-# Opgave 7:
-# Welke van de gegeven print() statements zullen een foutmelding veroorzaken? Bedenkt het antwoord vooraf en check het door de code uit te voeren.
-# ==========================================
-
-# Haal de # weg voor de print statements om de code te testen
-
-# print(int('1490.99'))
-
-# print(float(12))
-
-# print(int('1plus1'))
-
-# print(str(25E10))
