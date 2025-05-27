@@ -145,11 +145,12 @@ elif choice_1 == 2:
     else:
         print('Invalid choice, try again.')
 
-#Choice south
+# Choice south
 elif choice_1 == 3:
-    print('You went South. You weren\'t paying attention and you fell into a ravine.')
+    print('You went South. You weren\'t paying attention and you fell into a ravine. Game Over.')
 
+# Choice west
 elif choice_1 == 4:
-    print('You went West and entered a saloon. The cowboys shot you for trespassing.')
+    print('You went West and entered a saloon. The cowboys shot you for trespassing. Game Over.')
 
 else: print('Invalid choice, try again.')
