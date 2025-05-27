@@ -9,3 +9,7 @@
 
 # Het programma moet de volgende operaties ondersteunen: +, -, *, /
 # Als de gebruiker een ongeldige operatie invoert, moet het programma "Invalid operation" printen.
+
+float(input("Enter a number: "))
+input("Enter an operator: ")
+float(input("Enter a number: "))
