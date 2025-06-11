@@ -64,6 +64,17 @@ else:
 # Voorbeeld output: 1 2 3
 # ==========================================
 
+number1 = int(input('voer een getal in: '))
+number2 = int(input("voer een getal in: "))
+number3 = int(input("voer een getal in: "))
+
+if number1 > number2:
+    number1, number2 = number2, number1
+if number2 > number3:
+    number2, number3 = number3, number2
+if number1 > number2:
+    number1, number2 = number2, number1
+print(number1, number2, number3)
 
 
 
@@ -80,10 +91,22 @@ else:
 # ==========================================
 
 total = 0
-input_amount = 0
+printed_numbers = 0
 
-while input_amount > 0:
-    int(input('Enter a number: '))
+input_amount = int(input('Enter a number: '))
+
+while input_amount != 0:
+    total += input_amount
+    printed_numbers += 1
+    input_amount = int(input('Enter a number: '))
+
+if  printed_numbers != 0:
+    print(f"total: {total}")
+    print(f"average: {total / printed_numbers}")
+
+else:
+    print('No numbers were entered.')
+
 
 
 

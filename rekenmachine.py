@@ -10,6 +10,17 @@
 # Het programma moet de volgende operaties ondersteunen: +, -, *, /
 # Als de gebruiker een ongeldige operatie invoert, moet het programma "Invalid operation" printen.
 
-float(input("Enter a number: "))
-input("Enter an operator: ")
-float(input("Enter a number: "))
+
+number_1 = float(input("Enter a number: "))
+operator = input("Enter an operator +, -, *, or /: ")
+number_2 = float(input("Enter a number: "))
+
+if operator == '+':
+    print(f'{number_1} + {number_2} = {number_1 + number_2}')
+elif operator == '-':
+    print(f'{number_1} - {number_2} = {number_1 - number_2}')
+elif operator == '*':
+    print(f'{number_1} * {number_2} = {number_1 * number_2}')
+elif operator == '/':
+    print(f'{number_1} / {number_2} = {number_1 / number_2}')
+else: print('Invalid operator chosen.')
