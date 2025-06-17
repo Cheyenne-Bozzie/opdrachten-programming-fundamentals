@@ -12,6 +12,13 @@ print('3 x 4 = 12')
 ### Laat python de wortel van een getal berekenen en het resultaat printen
 # De wortel van 16 is 4
 # Tip gebruik ** om de wortel te berekenen
+# Definieer het getal waarvan je de wortel wilt berekenen
+
+getal = 16
+wortel = getal ** 0.5
+
+print(f"De wortel van {getal} is {wortel}")
+
 
 ### Laat python de rest van een deling berekenen en het resultaat printen
 #  De rest van 10 / 3 is 1

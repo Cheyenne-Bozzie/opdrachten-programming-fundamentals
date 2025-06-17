@@ -123,7 +123,9 @@ else:
 # ==========================================
 
 
+factor = int(input('Enter a number: '))
 
-
-
+for teller in range(1, 11):
+    result = teller * factor
+    print(f'{teller} x {factor} = {result}')
 
