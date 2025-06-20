@@ -29,7 +29,11 @@ print('list na toevoeging 40 aan het einde van de lijst: ', getallen)  # Het res
 # Verwachte uitkomst: [2, 5, 6, 7, 11, 19, 22]
 # ==========================================
 
-
+getallen = [2, 4, 7, 11, 19]
+getallen.append(22)
+getallen.insert(2, 6)
+getallen[1] = 5
+print(getallen)
 
 # ==========================================
 # Opdracht 2:
@@ -44,7 +48,15 @@ print('list na toevoeging 40 aan het einde van de lijst: ', getallen)  # Het res
 # Verwachte uitkomst:   [1, 1, 2, 3, 5, 8, 13]
 # ==========================================
 
+fibonacci_reeks = [1, 1]
+def fibonacci(reeks):
+    volgend_getal = reeks[-1] + reeks[-2]
+    reeks.append(volgend_getal)
 
+for _ in range(5):
+    fibonacci(fibonacci_reeks)
+
+print(fibonacci_reeks)
 
 # ==========================================
 # Opdracht 3:
@@ -52,3 +64,12 @@ print('list na toevoeging 40 aan het einde van de lijst: ', getallen)  # Het res
 #
 # Verwachte uitkomst:  [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 # ==========================================
+
+kwadraten_lijst = []
+
+for getal in range(1, 11):
+    kwadraat_van_getal = getal ** 2
+
+    kwadraten_lijst.append(kwadraat_van_getal)
+
+print(kwadraten_lijst)
