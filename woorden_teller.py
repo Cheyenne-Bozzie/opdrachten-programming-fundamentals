@@ -1,0 +1,1 @@
+zin = "dit is een test zin om te testen of dit programma werkt"
