@@ -16,10 +16,16 @@
 
 
 # Probeer het eerst zonder loop,
-
+getal_input = int(input('Kies een nummer waarvan je de tafel x 1 wilt zien: '))
+teller_1 = 1
+tafel = getal_input * teller_1
+print(f'{getal_input} x {teller_1} = {tafel}')
 
 # Probeer het nu met een loop.
-
+getal_input = int(input('Kies een nummer waarvan je de tafel wilt zien: '))
+for teller in range(1,11):
+    tafel = getal_input * teller
+    print(f'{getal_input} x {teller} = {tafel}')
 
 # --------------------------------------------------------------------------------------------
 
@@ -27,8 +33,11 @@
 # Schrijf een programma dat de som van alle getallen tot een bepaalde limiet berekent.
 
 # Bijvoorbeeld: de som van alle getallen tot 3 is 6 (1 + 2 + 3 = 6)
-
-
+getal_input = int(input('Vul een getal in waarvan je een som wilt zien totdat het dat getal bereikt: '))
+totale_som = 0
+for teller in range(0, getal_input + 1):
+    totale_som += teller
+print(f"De som van alle getallen tot {getal_input} is {totale_som}.")
 
 # --------------------------------------------------------------------------------------------
 
@@ -40,6 +49,16 @@
 # En voor veelvouden van vijf, druk "Buzz" af.
 # Voor veelvouden van zowel drie als vijf, druk "FizzBuzz" af.
 
+for teller in range(0, 101):
+
+    if teller % 3 == 0 and teller % 5 == 0:
+        print('Fizzbuzz')
+    elif teller % 3 == 0:
+        print('Fizz')
+    elif teller % 5 == 0:
+        print('Buzz')
+    else:
+        print(teller)
 
 
 # --------------------------------------------------------------------------------------------
@@ -60,7 +79,7 @@
 # 8 + 13 = 21
 # 13 + 21 = 34
 
-i = int(input("Hoeveel Fibonacci-getallen wil je zien? "))
+g_input = int(input("Hoeveel Fibonacci-getallen wil je zien? "))
 
 # De eerste twee getallen van de Fibonacci-reeks zijn 0 en 1
 a = 0
@@ -68,5 +87,22 @@ b = 1
 
 # Eerst drukken we de eerste twee getallen af
 
+if g_input <= 0:
+    print("Voer een positief getal in.")
+elif g_input == 1:
+    print(a)
+elif g_input == 2:
+    print(a, b, end= ', ')
+else:
+    print(a, b, end= ', ')
 
 # Vervolgens berekenen we de volgende getallen en drukken ze af
+if g_input > 2:
+    for _ in range(g_input - 2):
+        fib_som = a + b
+        a, b = b, fib_som
+
+        if _ == (g_input - 3):
+            print(fib_som)
+        else:
+            print(fib_som, end=', ')
