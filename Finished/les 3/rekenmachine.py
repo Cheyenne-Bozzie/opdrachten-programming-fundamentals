@@ -10,7 +10,6 @@
 # Het programma moet de volgende operaties ondersteunen: +, -, *, /
 # Als de gebruiker een ongeldige operatie invoert, moet het programma "Invalid operation" printen.
 
-
 number_1 = float(input("Enter a number: "))
 operator = input("Enter an operator +, -, *, or /: ")
 number_2 = float(input("Enter a number: "))
